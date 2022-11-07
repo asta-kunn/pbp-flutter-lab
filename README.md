@@ -15,7 +15,8 @@
     - FloatingActionButton _> FloatingActionButtons adalah widget yang  berfungsi untuk menambahkan tombol yang dapat di klik yang biasanya melayang pada layar aplikasi.
 
 ## Apa fungsi dari setState()? Jelaskan variabel apa saja yang dapat terdampak dengan fungsi tersebut   
-    fungsi dari setState() adalah untuk memberitahu framework Flutter bahwa sesuatu telah berubah di State ini, yang menyebabkan ia untuk menjalankan kembali metode build di bawah sehingga tampilan dapat mencerminkan nilai yang diperbarui. Pada projek kali ini jika kita mengubah _counter tanpa memanggil setState(), maka metode build tidak akan dipanggil lagi, dan jadi tidak akan tampak apa-apa terjadi.
+    fungsi dari setState() adalah untuk memberitahu framework Flutter bahwa sesuatu telah berubah di State ini, yang menyebabkan ia untuk menjalankan kembali metode build di bawah sehingga tampilan dapat mencerminkan nilai yang diperbarui. 
+    Pada projek kali ini jika kita mengubah _counter tanpa memanggil setState(), maka metode build tidak akan dipanggil lagi, dan jadi tidak akan tampak apa-apa terjadi.
 
 ## Jelaskan perbedaan antara const dengan final
     perbedaan const dan final adalah const adalah nilai yang tidak bisa diubah sedangkan final adalah nilai yang bisa diubah. 
