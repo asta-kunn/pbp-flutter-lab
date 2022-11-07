@@ -124,11 +124,15 @@ class _MyHomePageState extends State<MyHomePage> {
       Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          FloatingActionButton(
-            onPressed: _decrementCounter,
-            tooltip: 'Decrement',
-            child: const Icon(Icons.remove),
+          Visibility(
+            visible: _counter > 0,
+            child: FloatingActionButton(
+              onPressed: _decrementCounter,
+              tooltip: 'Decrement',
+              child: const Icon(Icons.remove),
+            ),
           ),
+
           FloatingActionButton(
             onPressed: _incrementCounter,
             tooltip: 'Increment',
