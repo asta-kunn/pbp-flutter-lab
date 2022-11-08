@@ -80,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
-      appBar: AppBar( 
+      appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
@@ -111,7 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
               style: TextStyle(
                 color: _counter % 2 == 0 ? Colors.red : Colors.blue,
               ),
-            ),           
+            ),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
@@ -119,28 +119,27 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: 
-       // make plus and less buttons separated by 2 meters apart 
-      Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          Visibility(
-            visible: _counter > 0,
-            child: FloatingActionButton(
-              onPressed: _decrementCounter,
-              tooltip: 'Decrement',
-              child: const Icon(Icons.remove),
-            ),
-          ),
-
-          FloatingActionButton(
-            onPressed: _incrementCounter,
-            tooltip: 'Increment',
-            child: const Icon(Icons.add),
-          ),
-          
-        ],
-      )
+      floatingActionButton:
+          Padding(
+              padding: const EdgeInsets.only(left: 30),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Visibility(
+                    visible: _counter > 0,
+                    child: FloatingActionButton(
+                      onPressed: _decrementCounter,
+                      tooltip: 'Decrement',
+                      child: const Icon(Icons.remove),
+                    ),
+                  ),
+                  FloatingActionButton(
+                    onPressed: _incrementCounter,
+                    tooltip: 'Increment',
+                    child: const Icon(Icons.add),
+                  ),
+                ],
+              )),
     );
   }
 }
