@@ -34,28 +34,27 @@
     }
 
     2. Menambahkan FloatingActionButton, - pada kiri layar dan + pada kanan layar. Kodingannya seperti berikut (+bonus)
-    floatingActionButton: 
-       // make plus and less buttons separated by 2 meters apart 
-      Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          Visibility(
-            visible: _counter > 0,
-            child: FloatingActionButton(
-              onPressed: _decrementCounter,
-              tooltip: 'Decrement',
-              child: const Icon(Icons.remove),
-            ),
-          ),
-
-          FloatingActionButton(
-            onPressed: _incrementCounter,
-            tooltip: 'Increment',
-            child: const Icon(Icons.add),
-          ),
-          
-        ],
-    )
+    floatingActionButton:
+      Padding(
+          padding: const EdgeInsets.only(left: 30),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Visibility(
+                visible: _counter > 0,
+                child: FloatingActionButton(
+                  onPressed: _decrementCounter,
+                  tooltip: 'Decrement',
+                  child: const Icon(Icons.remove),
+                ),
+              ),
+              FloatingActionButton(
+                onPressed: _incrementCounter,
+                tooltip: 'Increment',
+                child: const Icon(Icons.add),
+              ),
+            ],
+          )),
 
     3. Menambahkan Method Text untuk warna merah pada angka genap dan biru pada angka ganjil. Implementasi code sebagai berikut.
     Text(
