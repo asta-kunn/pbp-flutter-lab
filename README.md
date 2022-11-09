@@ -12,7 +12,8 @@
     - Row & Column -> row adalah widget yang berisi beberapa widget lainnya secara horizontal, sedangkan column adalah widget yang berisi widget lainnya secara vertikal
     - Text -> text adalah widget yang digunakan untuk menampilkan teks
     - Visibility -> Visibility adalah widget yang digunakan untuk menampilkan widget lainnya jika kondisi tertentu terpenuhi.
-    - FloatingActionButton _> FloatingActionButtons adalah widget yang  berfungsi untuk menambahkan tombol yang dapat di klik yang biasanya melayang pada layar aplikasi.
+    - FloatingActionButton -> FloatingActionButtons adalah widget yang  berfungsi untuk menambahkan tombol yang dapat di klik yang biasanya melayang pada layar aplikasi.
+    - Padding -> padding adalah widget yang digunakan untuk memberikan jarak antar widget
 
 ## Apa fungsi dari setState()? Jelaskan variabel apa saja yang dapat terdampak dengan fungsi tersebut   
     fungsi dari setState() adalah untuk memberitahu framework Flutter bahwa sesuatu telah berubah di State ini, yang menyebabkan ia untuk menjalankan kembali metode build di bawah sehingga tampilan dapat mencerminkan nilai yang diperbarui. 
