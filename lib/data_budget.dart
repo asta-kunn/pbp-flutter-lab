@@ -37,7 +37,7 @@ class _DataBudgetState extends State<MyDataBudgetPage> {
                       children: [
                         Text(globals.budgets[index].jenisBudget),
                         Text(
-                          globals.budgets[index].date.toString(),
+                          globals.budgets[index].tanggal.toString(),
                           style: const TextStyle(color: Colors.grey),
                         )
                       ]),

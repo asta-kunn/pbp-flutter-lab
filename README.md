@@ -69,6 +69,57 @@
         style: Theme.of(context).textTheme.headline4,
     ),
 
-    
+
+# **Tugas 8**
+
+## Perbedaan Navigator.push dan Navigator.pushReplacement
+
+    Navigator.push itu berfungsi untuk menambahkan route baru ke stack navigasi 
+    sedangkan Navigator.pushReplacement itu berfungsi untuk mengganti route yang ada di stack navigasi dengan route baru
+
+## Widget yang dipakai dan fungsinya
+
+-   Container: widget yang berfungsi sebagai _container_ untuk menampung widget lainnya
+-   Form: widget yang berfungsi untuk membuat form
+-   Column: widget yang berfungsi untuk menampung widget lainnya secara vertikal
+-   ListTile: row yang menampung teks sebagai leading dan trailing
+-   Drawer: widget yang berfungsi untuk membuat _drawer_ di sisi kiri layar (untuk navigasi)
+
+## Jenis event pada Flutter
+
+-   onTap: event yang terjadi ketika widget di tap
+-   onPressed: event yang terjadi ketika widget di tekan
+-   onChanged: event yang terjadi ketika widget diubah
+-   onSaved: event yang terjadi ketika widget disimpan
+
+## Cara kerja Navigator saat mengganti halaman aplikasi
+
+Navigator mengatur stack of route dan menyediakan dua cara untuk mengatur stack of route, yaitu declarative dan imperative. Declarative menggunakan Navigator.pages, sedangkan imperative Navigator.push dan Navigator.pop
+
+## Implementasi checklist
+    1. Bikin file drawer.dart untuk drawer nya yang akan digunakan di data_budget, form_budget, dan main 
+    dengan cara drawer: const DrawerApp()
+
+    2. Buat form dengan input String judul, int nominal, String jenisBudget dan tanggal sebagai input form
+
+    3. buat class Budget di form_budget 
+    class Budget {
+      late String judul;
+      late int nominal;
+      late String jenisBudget;
+      late DateTime tanggal;
+
+      Budget(
+          {required this.judul, required this.nominal, required this.jenisBudget, required this.tanggal});
+    }
+
+    4. Bikin file globals.dart dan buat variabel global budgets yang menampung list dari Budget
+    library counter_7.globals;
+    import 'package:counter_7/form_budget.dart';
+
+    List<Budget> budgets = [];
+
+    5. dengan menggunakan ListView.builder data yang ada di globals.budgets dapat ditampilkan di data_budget.dart
+
 
 
