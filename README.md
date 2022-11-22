@@ -167,8 +167,8 @@ Data diambil menggunakan HTTP dalam fungsi 'fetchWatchlist' yang memanggil fungs
 		return listMyWatchlist;
 	}
 	```
-3. Buat 'my_watchlist.dart' dan buat 'MyWatchlistPage StatefulWidget' yang berisi 'FutureBuilder' yang mengambil data menggunakan fungsi 'fetchWatchlist'.
-4. Buat 'my_watchlist_detail.dart' dan buat 'MyWatchlistDetailPage StatelessWidget' yang menampilkan data yang akan diteruskan dari 'MyWatchlistPage'.
+3. Buat 'watchlist.dart' dan buat 'MyWatchlistPage StatefulWidget' yang berisi 'FutureBuilder' yang mengambil data menggunakan fungsi 'fetchWatchlist'.
+4. Buat 'watchlist_detail.dart' dan buat 'MyWatchlistDetailPage StatelessWidget' yang menampilkan data yang akan diteruskan dari 'MyWatchlistPage'.
 5. Teruskan data dari 'MyWatchlistPage' ke 'MyWatchlistDetailPage' menggunakan 'Navigator.push'.
     ```dart
 	Navigator.push(
