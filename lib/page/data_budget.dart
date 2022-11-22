@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:counter_7/main.dart';
-import 'package:counter_7/form_budget.dart';
-import 'package:counter_7/drawer.dart';
-import 'global.dart' as globals;
+// ignore: unused_import
+import 'package:counter_7/page/form_budget.dart';
+import 'package:counter_7/widgets/drawer.dart';
+import '../model/global.dart' as globals;
 
 class MyDataBudgetPage extends StatefulWidget {
   const MyDataBudgetPage({super.key});

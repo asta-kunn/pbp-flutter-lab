@@ -1,9 +1,10 @@
+// ignore: unused_import
 import 'package:counter_7/main.dart';
-import 'package:counter_7/data_budget.dart';
+import 'package:counter_7/page/data_budget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:counter_7/drawer.dart';
-import 'global.dart' as globals;
+import 'package:counter_7/widgets/drawer.dart';
+import '../model/global.dart' as globals;
 
 class MyBudgetFormPage extends StatefulWidget {
   const MyBudgetFormPage({super.key});

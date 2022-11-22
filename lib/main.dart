@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:counter_7/form_budget.dart';
-import 'package:counter_7/data_budget.dart';
-import 'package:counter_7/drawer.dart';
+import 'package:counter_7/page/form_budget.dart';
+// ignore: unused_import
+import 'package:counter_7/page/data_budget.dart';
+import 'package:counter_7/widgets/drawer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -126,12 +127,12 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton:
-          Padding(
+          Padding(  
               padding: const EdgeInsets.only(left: 30),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Visibility(
+              child: Row( 
+                mainAxisAlignment: MainAxisAlignment.spaceBetween, 
+                children: [ 
+                  Visibility(   
                     visible: _counter > 0,
                     child: FloatingActionButton(
                       onPressed: _decrementCounter,
@@ -149,3 +150,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
