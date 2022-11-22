@@ -132,7 +132,7 @@ Ya, kita dapat mengambil data JSON tanpa membuat model terlebih dahulu. Kita dap
 - TextButton: widget yang berfungsi untuk membuat button
 - FutureBuilder: widget yang berfungsi untuk menampilkan data yang diambil dari API
 
-## How fetching data from json in flutter works
+##  Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
 Data diambil menggunakan HTTP dalam fungsi 'fetchWatchlist' yang memanggil fungsi get dengan instance HTTP. Fungsi mengembalikan daftar objek 'MyWatchlist'. 'FutureBuilder' akan memanggil fungsi dan menunggu responsnya. Ketika data diambil, 'FutureBuilder' mengembalikan 'ListView.builder' yang membangun 'ListTiles' yang berisi data yang dipetakan yang kita dapatkan dari fungsi 'fetchWatchlist'.
 
 
@@ -142,7 +142,7 @@ Data diambil menggunakan HTTP dalam fungsi 'fetchWatchlist' yang memanggil fungs
    ```dart
    // fetch_watchlist.dart
 	Future<List<MyWatchlist>> fetchWatchlist() async {
-		var url = Uri.parse('https://edutjie-pbp-2.herokuapp.com/mywatchlist/json/');
+		var url = Uri.parse('https://tugas-2-pbp-rifqi.herokuapp.com/mywatchlist/json/');
 
 		var response = await http.get(
 				url,
